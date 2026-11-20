@@ -1,0 +1,182 @@
+.card {
+  position: relative;
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.64);
+  border-radius: 18px;
+  background:
+    radial-gradient(circle at 78% 16%, rgba(196, 149, 78, 0.2), transparent 27%),
+    radial-gradient(circle at 15% 86%, rgba(47, 117, 89, 0.22), transparent 29%),
+    linear-gradient(145deg, #f5fbf6 0%, #e3f0e8 52%, #d9e9df 100%);
+  color: #20312a;
+  box-shadow: 0 18px 44px rgba(25, 44, 54, 0.12);
+  isolation: isolate;
+}
+
+.cardInterface {
+  background:
+    radial-gradient(circle at 78% 16%, rgba(196, 149, 78, 0.18), transparent 27%),
+    radial-gradient(circle at 15% 86%, rgba(233, 169, 189, 0.34), transparent 31%),
+    linear-gradient(145deg, #fff8f6 0%, #f4e5e8 50%, #ecd4dc 100%);
+}
+.cardInterface .orbit {
+  border-color: rgba(180, 108, 132, 0.2);
+  box-shadow: 0 0 0 28px rgba(233, 169, 189, 0.045), 0 0 0 56px rgba(196, 149, 78, 0.025);
+}
+.grid {
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  background:
+    repeating-linear-gradient(90deg, rgba(32, 49, 42, 0.065) 0 1px, transparent 1px 8.333%),
+    repeating-linear-gradient(0deg, rgba(32, 49, 42, 0.045) 0 1px, transparent 1px 20%);
+  mask-image: linear-gradient(180deg, black, transparent 94%);
+}
+
+.orbit {
+  position: absolute;
+  z-index: -1;
+  top: 10%;
+  right: -8%;
+  width: 45%;
+  aspect-ratio: 1;
+  border: 1px solid rgba(47, 117, 89, 0.18);
+  border-radius: 50%;
+  box-shadow: 0 0 0 28px rgba(47, 117, 89, 0.035), 0 0 0 56px rgba(196, 149, 78, 0.028);
+}
+
+.topline {
+  position: absolute;
+  z-index: 4;
+  top: 13px;
+  right: 14px;
+  left: 14px;
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  color: rgba(32, 49, 42, 0.55);
+  font-family: var(--font-mono);
+  font-size: 7px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.phones {
+  position: absolute;
+  inset: 12% 5% 16%;
+}
+
+.phone {
+  position: absolute;
+  overflow: hidden;
+  border: 2px solid #1c3329;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 16px 36px rgba(21, 52, 40, 0.17);
+  transition: transform 360ms var(--ease-out), box-shadow 360ms var(--ease-out);
+}
+.phoneImage { object-fit: cover; object-position: top center; }
+.phoneLeft {
+  top: 16%;
+  left: 4%;
+  width: 27%;
+  height: 65%;
+  transform: rotate(-6deg);
+}
+.phoneCenter {
+  z-index: 3;
+  top: 5%;
+  left: 50%;
+  width: 31%;
+  height: 82%;
+  transform: translateX(-50%);
+}
+.phoneRight {
+  top: 16%;
+  right: 4%;
+  width: 27%;
+  height: 65%;
+  transform: rotate(6deg);
+}
+.card:hover .phoneLeft { transform: rotate(-8deg) translateY(-4px); }
+.card:hover .phoneCenter { transform: translateX(-50%) translateY(-5px); }
+.card:hover .phoneRight { transform: rotate(8deg) translateY(-4px); }
+.card:hover .phone { box-shadow: 0 22px 44px rgba(21, 52, 40, 0.23); }
+
+.tryBadge {
+  position: absolute;
+  z-index: 5;
+  top: 39%;
+  left: 31%;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  border: 1px solid rgba(32, 49, 42, 0.15);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.86);
+  padding: 6px 9px;
+  color: #1d5b48;
+  font-family: var(--font-mono);
+  font-size: 6px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  box-shadow: 0 10px 24px rgba(32, 49, 42, 0.12);
+  backdrop-filter: blur(10px);
+  transform: rotate(-3deg);
+}
+.pulse { width: 6px; height: 6px; border-radius: 50%; background: #2f7559; box-shadow: 0 0 0 4px rgba(47, 117, 89, 0.12); }
+
+.bottomline {
+  position: absolute;
+  z-index: 4;
+  right: 14px;
+  bottom: 12px;
+  left: 14px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+.chips { display: flex; flex-wrap: wrap; gap: 4px; }
+.chips span {
+  border: 1px solid rgba(32, 49, 42, 0.14);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.62);
+  padding: 5px 7px;
+  color: rgba(32, 49, 42, 0.58);
+  font-family: var(--font-mono);
+  font-size: 6px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.cta {
+  display: inline-flex;
+  min-height: 28px;
+  align-items: center;
+  gap: 7px;
+  border-radius: 999px;
+  background: #20312a;
+  padding: 6px 9px;
+  color: #fff;
+  font-family: var(--font-mono);
+  font-size: 6px;
+  letter-spacing: 0.035em;
+  text-transform: uppercase;
+}
+.arrow { width: 10px; height: 10px; }
+
+@media (max-width: 639px) {
+  .card { aspect-ratio: 4 / 3; }
+  .phones { inset: 15% 4% 18%; }
+  .topline { top: 10px; right: 10px; left: 10px; }
+  .phone { border-width: 1px; border-radius: 8px; }
+  .phoneCenter { width: 33%; }
+  .phoneLeft,
+  .phoneRight { width: 27%; }
+  .tryBadge { top: 37%; left: 24%; }
+  .bottomline { right: 10px; bottom: 9px; left: 10px; }
+  .chips span:nth-child(3) { display: none; }
+}

@@ -1,0 +1,310 @@
+.wrap {
+  position: relative;
+  z-index: 1;
+  padding: 24px var(--site-edge) var(--site-edge);
+}
+
+.footer {
+  overflow: clip;
+  border: 0;
+  border-radius: 38px;
+  background: #f7f1e6;
+  box-shadow: 0 8px 0 #c4cec7;
+  padding: var(--card-pad);
+  color: #071019;
+}
+
+.topline {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px 24px;
+  color: #40534d;
+}
+
+.main {
+  display: grid;
+  gap: 42px;
+  padding-block: clamp(52px, 8vw, 120px);
+}
+.kicker { margin-bottom: 18px; color: var(--muted); font-size: 13px; font-weight: 500; }
+.title {
+  max-width: 11ch;
+  font-size: clamp(3.5rem, 9.5vw, 10rem);
+  font-weight: 600;
+  line-height: 0.84;
+  letter-spacing: -0.07em;
+  text-wrap: balance;
+}
+.accent {
+  font-family: var(--font-sans);
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.email {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  align-self: end;
+  border-radius: 18px;
+  background: #ff6655;
+  padding: 16px 18px;
+  color: #240c08;
+  font-size: clamp(1.15rem, 3vw, 2.7rem);
+  font-weight: 600;
+  letter-spacing: -0.045em;
+}
+.emailIcon {
+  display: grid;
+  width: 58px;
+  height: 58px;
+  flex: 0 0 auto;
+  place-items: center;
+  border-radius: 50%;
+  background: #071019;
+  color: #f7fbfd;
+  transition: transform 260ms var(--ease-out), background-color 220ms ease;
+}
+.email:hover .emailIcon { transform: rotate(6deg) scale(1.05); }
+.arrow { width: 18px; height: 18px; }
+
+.caseStampContactBlock {
+  display: grid;
+  width: min(100%, 23rem);
+  align-self: end;
+  justify-self: end;
+  gap: 10px;
+}
+.caseStampContactBlock[data-tone="hape"] {
+  --stamp-a: #b5000b;
+  --stamp-a-ink: #fbf7f1;
+  --stamp-a-shadow: #8f0009;
+  --stamp-b: #e9bcb6;
+  --stamp-b-ink: #1c1c18;
+  --stamp-b-shadow: #b98f8b;
+}
+.caseStampContactBlock[data-tone="micro-world"] {
+  --stamp-a: #becf64;
+  --stamp-a-ink: #09100c;
+  --stamp-a-shadow: #8c985a;
+  --stamp-b: #ffb59a;
+  --stamp-b-ink: #09100c;
+  --stamp-b-shadow: #c18a76;
+}
+.caseStampContactBlock[data-tone="petly"] {
+  --stamp-a: #2f7559;
+  --stamp-a-ink: #f7fffa;
+  --stamp-a-shadow: #1d5b48;
+  --stamp-b: #dff2e7;
+  --stamp-b-ink: #20312a;
+  --stamp-b-shadow: #a9c8b8;
+}
+.caseStampContactBlock[data-tone="y2k"] {
+  --stamp-a: #0001bb;
+  --stamp-a-ink: #fcf9f8;
+  --stamp-a-shadow: #00015c;
+  --stamp-b: #c3f400;
+  --stamp-b-ink: #1c1b1b;
+  --stamp-b-shadow: #7f9c00;
+}
+.caseStampLabel {
+  color: #40534d;
+  font-family: var(--font-mono);
+  font-size: 8px;
+  letter-spacing: 0.05em;
+  text-align: right;
+  text-transform: uppercase;
+}
+.caseStampGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  padding-top: 8px;
+}
+.caseStamp {
+  --stamp-face: #e9e4d5;
+  --stamp-ink: #09100c;
+  --stamp-shadow: #9fa58f;
+  position: relative;
+  display: flex;
+  min-height: 148px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 11px;
+  border: 1px solid color-mix(in srgb, var(--stamp-ink) 22%, transparent);
+  border-radius: 30px 30px 10px 30px;
+  background: var(--stamp-face);
+  box-shadow: 0 0 0 1px color-mix(in srgb, var(--stamp-ink) 10%, transparent), 0 6px 0 var(--stamp-shadow);
+  padding: 25px 10px 28px;
+  color: var(--stamp-ink);
+  text-align: center;
+  transition: transform 240ms var(--ease-out), box-shadow 240ms var(--ease-out);
+}
+.caseStamp::before {
+  position: absolute;
+  inset: 7px;
+  border: 2px dotted color-mix(in srgb, var(--stamp-ink) 32%, transparent);
+  border-radius: 23px 23px 5px 23px;
+  content: "";
+  pointer-events: none;
+}
+.caseStampQq {
+  --stamp-face: var(--stamp-a);
+  --stamp-ink: var(--stamp-a-ink);
+  --stamp-shadow: var(--stamp-a-shadow);
+  transform: rotate(-2.6deg);
+}
+.caseStampGmail {
+  --stamp-face: var(--stamp-b);
+  --stamp-ink: var(--stamp-b-ink);
+  --stamp-shadow: var(--stamp-b-shadow);
+  transform: rotate(2.2deg);
+}
+.caseStamp:hover {
+  transform: translateY(-5px) rotate(0deg) scale(1.015);
+  box-shadow: 0 0 0 1px color-mix(in srgb, var(--stamp-ink) 10%, transparent), 0 11px 0 var(--stamp-shadow);
+}
+.caseStamp:focus-visible {
+  outline: 2px solid #09100c;
+  outline-offset: 4px;
+}
+.caseStampPostmark {
+  position: absolute;
+  top: 13px;
+  right: 13px;
+  display: grid;
+  width: 26px;
+  height: 26px;
+  place-items: center;
+  border: 1px dashed currentColor;
+  border-radius: 50%;
+  font-family: var(--font-mono);
+  font-size: 6.5px;
+  opacity: 0.42;
+  transform: rotate(10deg);
+}
+.caseStampIcon {
+  display: grid;
+  width: 54px;
+  height: 54px;
+  place-items: center;
+  border-radius: 50%;
+  background: #ffffff;
+  box-shadow: 0 3px 0 rgba(9,16,12,0.22), inset 0 0 0 1px rgba(9,16,12,0.08);
+  transition: transform 240ms var(--ease-out);
+}
+.caseStampIcon svg { width: 43px; height: 43px; }
+.caseStamp:hover .caseStampIcon { transform: rotate(-5deg) scale(1.06); }
+.caseStampCopy {
+  display: grid;
+  justify-items: center;
+  gap: 4px;
+}
+.caseStampCopy strong {
+  font-family: var(--font-mono);
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.caseStampCopy small {
+  position: absolute;
+  right: 10px;
+  bottom: 9px;
+  left: 10px;
+  overflow-wrap: anywhere;
+  opacity: 0;
+  color: color-mix(in srgb, var(--stamp-ink) 76%, transparent);
+  font-family: var(--font-mono);
+  font-size: 6.5px;
+  line-height: 1.3;
+  transform: translateY(4px);
+  transition: opacity 180ms ease, transform 180ms var(--ease-out);
+}
+.caseStamp:hover .caseStampCopy small,
+.caseStamp:focus-visible .caseStampCopy small {
+  opacity: 0.78;
+  transform: translateY(0);
+}
+@media (hover: none) {
+  .caseStampCopy small { opacity: 0.78; transform: translateY(0); }
+}
+html[data-theme="night"] .caseStampLabel { color: #b7c8cf; }
+.bottom {
+  display: grid;
+  gap: 16px;
+  color: #40534d;
+  font-family: var(--font-mono);
+  font-size: 9px;
+  line-height: 1.55;
+  letter-spacing: 0.035em;
+  text-transform: uppercase;
+}
+.bottom nav { display: flex; flex-wrap: wrap; gap: 10px 20px; }
+.bottom nav a { color: var(--ink-soft); transition: color 180ms ease; }
+.bottom nav a:hover { color: var(--ink); }
+
+html[data-theme="night"] .footer { background: #142832; color: #f4fafb; box-shadow: 0 8px 0 #050d12; }
+@media (min-width: 900px) {
+  .main { grid-template-columns: minmax(0, 1fr) minmax(340px, 0.58fr); align-items: end; }
+  .bottom { grid-template-columns: 1fr auto 1fr; align-items: center; }
+  .bottom > p:last-child { text-align: right; }
+}
+
+@media (max-width: 639px) {
+  .wrap { padding-top: 12px; }
+  .footer { border-radius: 28px; padding: var(--card-pad); }
+  .email { align-items: flex-end; word-break: break-all; }
+  .emailIcon { width: 48px; height: 48px; }
+  .caseStampContactBlock { width: 100%; }
+  .caseStampLabel { text-align: left; }
+  .caseStampCopy small { opacity: 0.78; transform: translateY(0); }
+}
+
+/* Chinese interface typography */
+
+html[data-language="zh"] .title {
+  max-width: 9ch;
+  font-size: clamp(3rem, 7vw, 6.4rem);
+  line-height: 1.08;
+  letter-spacing: -0.035em;
+}
+html[data-language="zh"] .accent { font-weight: 700; letter-spacing: -0.02em; }
+html[data-language="zh"] .caseContactTitle {
+  max-width: none;
+  font-family: var(--font-sans);
+  font-size: clamp(4.6rem, 8.333vw, 7.5rem);
+  font-weight: 700;
+  line-height: 0.92;
+  letter-spacing: -0.055em;
+}
+html[data-language="zh"] .caseContactTitle .accent {
+  font-family: inherit;
+  font-weight: 700;
+  letter-spacing: inherit;
+}
+@media (max-width: 639px) {
+  html[data-language="zh"] .title { font-size: clamp(2.8rem, 13vw, 4.5rem); line-height: 1.12; }
+  html[data-language="zh"] .caseContactTitle { font-size: clamp(2.7rem, 11.5vw, 3.6rem); line-height: 0.96; }
+}
+
+.main[data-compact="true"] {
+  grid-template-columns: minmax(0, 1fr);
+  align-items: center;
+  gap: 0;
+  padding-block: clamp(24px, 4vw, 40px);
+}
+.main[data-compact="true"] .email {
+  width: min(100%, 42rem);
+  justify-self: end;
+  align-self: center;
+}
+.main[data-compact="true"] .caseStampContactBlock {
+  width: min(100%, 23rem);
+  align-self: center;
+  justify-self: end;
+}

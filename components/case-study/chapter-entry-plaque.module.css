@@ -1,0 +1,94 @@
+.plaque {
+  --plaque-surface: #f7f1e6;
+  --plaque-ink: #071019;
+  --plaque-muted: #52645e;
+  --plaque-shadow: #c4cec7;
+  --plaque-accent: #071019;
+  --plaque-accent-ink: #f7f1e6;
+  display: inline-flex;
+  width: min(100%, 240px);
+  min-height: 64px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  border-radius: 16px;
+  background: var(--plaque-surface);
+  box-shadow: 0 5px 0 var(--plaque-shadow);
+  padding: 9px 9px 9px 16px;
+  color: var(--plaque-ink);
+  text-decoration: none;
+  transition: transform 220ms var(--ease-out), box-shadow 220ms var(--ease-out);
+}
+.plaque[data-tone="hape"] {
+  --plaque-surface: #f7f1e6;
+  --plaque-ink: #1c1c18;
+  --plaque-muted: #6d6259;
+  --plaque-shadow: #b9aa9b;
+  --plaque-accent: #b5000b;
+  --plaque-accent-ink: #fbf7f1;
+}
+.plaque[data-tone="micro"] {
+  --plaque-surface: #e9e4d5;
+  --plaque-ink: #09100c;
+  --plaque-muted: #52645e;
+  --plaque-shadow: #8c985a;
+  --plaque-accent: #becf64;
+  --plaque-accent-ink: #09100c;
+}
+.plaque[data-tone="petly"] {
+  --plaque-surface: #f7fffa;
+  --plaque-ink: #20312a;
+  --plaque-muted: #52655d;
+  --plaque-shadow: #a9c8b8;
+  --plaque-accent: #2f7559;
+  --plaque-accent-ink: #f7fffa;
+}
+.plaque[data-tone="y2k"] {
+  --plaque-surface: #fcf9f8;
+  --plaque-ink: #1c1b1b;
+  --plaque-muted: #5c5860;
+  --plaque-shadow: #b3b7ff;
+  --plaque-accent: #0001bb;
+  --plaque-accent-ink: #fcf9f8;
+}
+.copy { display: grid; min-width: 0; gap: 4px; }
+.index {
+  color: var(--plaque-muted);
+  font-family: var(--font-mono);
+  font-size: 7px;
+  letter-spacing: 0.065em;
+  line-height: 1.25;
+  text-transform: uppercase;
+}
+.label {
+  overflow: hidden;
+  font-family: var(--font-sans);
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.icon {
+  display: grid;
+  width: 42px;
+  height: 42px;
+  flex: 0 0 auto;
+  place-items: center;
+  border-radius: 12px;
+  background: var(--plaque-accent);
+  color: var(--plaque-accent-ink);
+  transition: transform 220ms var(--ease-out);
+}
+.arrow { width: 16px; height: 16px; transition: transform 220ms var(--ease-out); }
+.plaque:hover { transform: translateY(-2px); box-shadow: 0 7px 0 var(--plaque-shadow); }
+.plaque:hover .icon { transform: rotate(4deg) scale(1.04); }
+.plaque:hover .arrow { transform: translate(2px, -2px); }
+.plaque:focus-visible { outline: 2px solid var(--plaque-accent); outline-offset: 4px; }
+@media (max-width: 639px) {
+  .plaque { width: 100%; max-width: 280px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .plaque, .icon, .arrow { transition: none; }
+}

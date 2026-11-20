@@ -1,0 +1,81 @@
+.page {
+  min-height: 100svh;
+  padding: clamp(22px, 3vw, 42px);
+  background:
+    radial-gradient(circle at 78% 12%, rgba(255, 255, 255, 0.78), transparent 24%),
+    linear-gradient(145deg, #d5ddd6 0%, #e9e5db 48%, #cfd8d0 100%);
+  color: #1b2822;
+}
+
+.header {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 28px;
+  margin-bottom: 22px;
+}
+
+.kicker,
+.note,
+.stageLabel,
+.footer {
+  font-family: var(--font-mono);
+  font-size: 9px;
+  letter-spacing: 0.06em;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+.kicker { color: #526a5d; }
+.title {
+  margin-top: 8px;
+  font-family: var(--font-sans);
+  font-size: clamp(3.3rem, 7vw, 7.5rem);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 0.82;
+  letter-spacing: -0.045em;
+}
+.note { max-width: 28rem; color: #4e6257; text-align: right; }
+
+.stage {
+  position: relative;
+  height: min(720px, calc(100svh - 240px));
+  min-height: 560px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.72);
+  border-radius: 34px;
+  background: #e8e4da;
+  box-shadow: 0 8px 0 #b7c3ba, 0 34px 90px rgba(35, 54, 44, 0.16);
+}
+
+.stage canvas { cursor: grab; }
+.stage canvas:active { cursor: grabbing; }
+
+.stageLabel {
+  position: absolute;
+  inset: auto 18px 16px;
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+  color: rgba(27, 40, 34, 0.58);
+  pointer-events: none;
+}
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 8px 24px;
+  margin-top: 18px;
+  color: #42574b;
+}
+
+@media (max-width: 700px) {
+  .header { align-items: flex-start; flex-direction: column; gap: 14px; }
+  .note { max-width: 24rem; text-align: left; }
+  .stage { height: calc(100svh - 300px); min-height: 480px; border-radius: 24px; }
+  .stageLabel { flex-direction: column; gap: 4px; }
+  .footer { display: grid; }
+}
+

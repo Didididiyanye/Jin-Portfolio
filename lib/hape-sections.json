@@ -1,0 +1,711 @@
+[
+  {
+    "id": "homepage",
+    "index": "01",
+    "name": "Homepage",
+    "node": "2010:379",
+    "src": "/images/work/hape/homepage-2x.png",
+    "width": 2560,
+    "height": 15598,
+    "sections": [
+      {
+        "index": "01",
+        "name": "Hero",
+        "src": "/images/work/hape/sections/01-homepage-01-hero.webp",
+        "width": 2560,
+        "height": 2500,
+        "start": 0,
+        "end": 2500
+      },
+      {
+        "index": "02",
+        "name": "LOVE",
+        "src": "/images/work/hape/sections/01-homepage-02-love.webp",
+        "width": 2560,
+        "height": 1100,
+        "start": 2400,
+        "end": 3500
+      },
+      {
+        "index": "03",
+        "name": "PLAY",
+        "src": "/images/work/hape/sections/01-homepage-03-play.webp",
+        "width": 2560,
+        "height": 1900,
+        "start": 3500,
+        "end": 5400
+      },
+      {
+        "index": "04",
+        "name": "LEARN",
+        "src": "/images/work/hape/sections/01-homepage-04-learn.webp",
+        "width": 2560,
+        "height": 1500,
+        "start": 5400,
+        "end": 6900
+      },
+      {
+        "index": "05",
+        "name": "Shop by Play",
+        "src": "/images/work/hape/sections/01-homepage-05-shop-by-play.webp",
+        "width": 2560,
+        "height": 1900,
+        "start": 6900,
+        "end": 8800
+      },
+      {
+        "index": "06",
+        "name": "Play by Age",
+        "src": "/images/work/hape/sections/01-homepage-06-play-by-age.webp",
+        "width": 2560,
+        "height": 1600,
+        "start": 8800,
+        "end": 10400
+      },
+      {
+        "index": "07",
+        "name": "Care for the World",
+        "src": "/images/work/hape/sections/01-homepage-07-care-for-the-world.webp",
+        "width": 2560,
+        "height": 1250,
+        "start": 10400,
+        "end": 11650
+      },
+      {
+        "index": "08",
+        "name": "How a HAPE Toy Is Born",
+        "src": "/images/work/hape/sections/01-homepage-08-how-a-hape-toy-is-born.webp",
+        "width": 2560,
+        "height": 1200,
+        "start": 11650,
+        "end": 12850
+      },
+      {
+        "index": "09",
+        "name": "Play Journal",
+        "src": "/images/work/hape/sections/01-homepage-09-play-journal.webp",
+        "width": 2560,
+        "height": 1250,
+        "start": 12850,
+        "end": 14100
+      },
+      {
+        "index": "10",
+        "name": "Newsletter",
+        "src": "/images/work/hape/sections/01-homepage-10-newsletter.webp",
+        "width": 2560,
+        "height": 920,
+        "start": 14100,
+        "end": 15020
+      },
+      {
+        "index": "11",
+        "name": "Footer",
+        "src": "/images/work/hape/sections/01-homepage-11-footer.webp",
+        "width": 2560,
+        "height": 698,
+        "start": 14900,
+        "end": 15598
+      }
+    ]
+  },
+  {
+    "id": "shop",
+    "index": "02",
+    "name": "Shop",
+    "node": "2010:855",
+    "src": "/images/work/hape/shop-2x.png",
+    "width": 2560,
+    "height": 11896,
+    "sections": [
+      {
+        "index": "01",
+        "name": "Hero",
+        "src": "/images/work/hape/sections/02-shop-01-hero.webp",
+        "width": 2560,
+        "height": 2150,
+        "start": 0,
+        "end": 2150
+      },
+      {
+        "index": "02",
+        "name": "Shop by Play",
+        "src": "/images/work/hape/sections/02-shop-02-shop-by-play.webp",
+        "width": 2560,
+        "height": 1750,
+        "start": 2150,
+        "end": 3900
+      },
+      {
+        "index": "03",
+        "name": "Shop by Age",
+        "src": "/images/work/hape/sections/02-shop-03-shop-by-age.webp",
+        "width": 2560,
+        "height": 1200,
+        "start": 3900,
+        "end": 5100
+      },
+      {
+        "index": "04",
+        "name": "Shop by Development",
+        "src": "/images/work/hape/sections/02-shop-04-shop-by-development.webp",
+        "width": 2560,
+        "height": 1150,
+        "start": 5100,
+        "end": 6250
+      },
+      {
+        "index": "05",
+        "name": "Featured Toys",
+        "src": "/images/work/hape/sections/02-shop-05-featured-toys.webp",
+        "width": 2560,
+        "height": 1550,
+        "start": 6250,
+        "end": 7800
+      },
+      {
+        "index": "06",
+        "name": "New Arrivals",
+        "src": "/images/work/hape/sections/02-shop-06-new-arrivals.webp",
+        "width": 2560,
+        "height": 1200,
+        "start": 7800,
+        "end": 9000
+      },
+      {
+        "index": "07",
+        "name": "Best Sellers",
+        "src": "/images/work/hape/sections/02-shop-07-best-sellers.webp",
+        "width": 2560,
+        "height": 1450,
+        "start": 9000,
+        "end": 10450
+      },
+      {
+        "index": "08",
+        "name": "Newsletter",
+        "src": "/images/work/hape/sections/02-shop-08-newsletter.webp",
+        "width": 2560,
+        "height": 750,
+        "start": 10450,
+        "end": 11200
+      },
+      {
+        "index": "09",
+        "name": "Footer",
+        "src": "/images/work/hape/sections/02-shop-09-footer.webp",
+        "width": 2560,
+        "height": 846,
+        "start": 11050,
+        "end": 11896
+      }
+    ]
+  },
+  {
+    "id": "learning-benefits",
+    "index": "03",
+    "name": "Learning Benefits",
+    "node": "2010:1280",
+    "src": "/images/work/hape/learning-benefits-2x.png",
+    "width": 2560,
+    "height": 15390,
+    "sections": [
+      {
+        "index": "01",
+        "name": "Hero",
+        "src": "/images/work/hape/sections/03-learning-benefits-01-hero.webp",
+        "width": 2560,
+        "height": 2450,
+        "start": 0,
+        "end": 2450
+      },
+      {
+        "index": "02",
+        "name": "Play Is How Learning Begins",
+        "src": "/images/work/hape/sections/03-learning-benefits-02-play-is-how-learning-begins.webp",
+        "width": 2560,
+        "height": 1400,
+        "start": 2450,
+        "end": 3850
+      },
+      {
+        "index": "03",
+        "name": "What They Learn Through Play",
+        "src": "/images/work/hape/sections/03-learning-benefits-03-what-they-learn-through-play.webp",
+        "width": 2560,
+        "height": 2400,
+        "start": 3850,
+        "end": 6250
+      },
+      {
+        "index": "04",
+        "name": "Fine Motor Skills",
+        "src": "/images/work/hape/sections/03-learning-benefits-04-fine-motor-skills.webp",
+        "width": 2560,
+        "height": 1400,
+        "start": 6250,
+        "end": 7650
+      },
+      {
+        "index": "05",
+        "name": "Social Skills",
+        "src": "/images/work/hape/sections/03-learning-benefits-05-social-skills.webp",
+        "width": 2560,
+        "height": 1150,
+        "start": 7650,
+        "end": 8800
+      },
+      {
+        "index": "06",
+        "name": "Problem Solving",
+        "src": "/images/work/hape/sections/03-learning-benefits-06-problem-solving.webp",
+        "width": 2560,
+        "height": 2100,
+        "start": 8800,
+        "end": 10900
+      },
+      {
+        "index": "07",
+        "name": "Exploring & Discovery",
+        "src": "/images/work/hape/sections/03-learning-benefits-07-exploring-and-discovery.webp",
+        "width": 2560,
+        "height": 1200,
+        "start": 10900,
+        "end": 12100
+      },
+      {
+        "index": "08",
+        "name": "Keep Learning Through Play",
+        "src": "/images/work/hape/sections/03-learning-benefits-08-keep-learning-through-play.webp",
+        "width": 2560,
+        "height": 1800,
+        "start": 12100,
+        "end": 13900
+      },
+      {
+        "index": "09",
+        "name": "Newsletter",
+        "src": "/images/work/hape/sections/03-learning-benefits-09-newsletter.webp",
+        "width": 2560,
+        "height": 750,
+        "start": 13900,
+        "end": 14650
+      },
+      {
+        "index": "10",
+        "name": "Footer",
+        "src": "/images/work/hape/sections/03-learning-benefits-10-footer.webp",
+        "width": 2560,
+        "height": 840,
+        "start": 14550,
+        "end": 15390
+      }
+    ]
+  },
+  {
+    "id": "sustainability",
+    "index": "04",
+    "name": "Sustainability",
+    "node": "2010:1553",
+    "src": "/images/work/hape/sustainability-2x.png",
+    "width": 2560,
+    "height": 14208,
+    "sections": [
+      {
+        "index": "01",
+        "name": "Hero",
+        "src": "/images/work/hape/sections/04-sustainability-01-hero.webp",
+        "width": 2560,
+        "height": 2250,
+        "start": 0,
+        "end": 2250
+      },
+      {
+        "index": "02",
+        "name": "Sustainable Foundations",
+        "src": "/images/work/hape/sections/04-sustainability-02-sustainable-foundations.webp",
+        "width": 2560,
+        "height": 1800,
+        "start": 2250,
+        "end": 4050
+      },
+      {
+        "index": "03",
+        "name": "Designed to Last",
+        "src": "/images/work/hape/sections/04-sustainability-03-designed-to-last.webp",
+        "width": 2560,
+        "height": 1600,
+        "start": 4050,
+        "end": 5650
+      },
+      {
+        "index": "04",
+        "name": "Responsible Design",
+        "src": "/images/work/hape/sections/04-sustainability-04-responsible-design.webp",
+        "width": 2560,
+        "height": 1450,
+        "start": 5650,
+        "end": 7100
+      },
+      {
+        "index": "05",
+        "name": "Learn to Love the World Around Us",
+        "src": "/images/work/hape/sections/04-sustainability-05-learn-to-love-the-world-around-us.webp",
+        "width": 2560,
+        "height": 2900,
+        "start": 7100,
+        "end": 10000
+      },
+      {
+        "index": "06",
+        "name": "Our Sustainability Journey",
+        "src": "/images/work/hape/sections/04-sustainability-06-our-sustainability-journey.webp",
+        "width": 2560,
+        "height": 2750,
+        "start": 10000,
+        "end": 12750
+      },
+      {
+        "index": "07",
+        "name": "Newsletter",
+        "src": "/images/work/hape/sections/04-sustainability-07-newsletter.webp",
+        "width": 2560,
+        "height": 700,
+        "start": 12750,
+        "end": 13450
+      },
+      {
+        "index": "08",
+        "name": "Footer",
+        "src": "/images/work/hape/sections/04-sustainability-08-footer.webp",
+        "width": 2560,
+        "height": 858,
+        "start": 13350,
+        "end": 14208
+      }
+    ]
+  },
+  {
+    "id": "age-development",
+    "index": "05",
+    "name": "Age & Development",
+    "node": "2010:1874",
+    "src": "/images/work/hape/age-development-2x.png",
+    "width": 2560,
+    "height": 8652,
+    "sections": [
+      {
+        "index": "01",
+        "name": "Hero",
+        "src": "/images/work/hape/sections/05-age-development-01-hero.webp",
+        "width": 2560,
+        "height": 2040,
+        "start": 0,
+        "end": 2040
+      },
+      {
+        "index": "02",
+        "name": "Shop by Developmental Age",
+        "src": "/images/work/hape/sections/05-age-development-02-shop-by-developmental-age.webp",
+        "width": 2560,
+        "height": 1410,
+        "start": 2040,
+        "end": 3450
+      },
+      {
+        "index": "03",
+        "name": "Nurturing the Whole Child",
+        "src": "/images/work/hape/sections/05-age-development-03-nurturing-the-whole-child.webp",
+        "width": 2560,
+        "height": 1200,
+        "start": 3450,
+        "end": 4650
+      },
+      {
+        "index": "04",
+        "name": "Explore Learning Benefits",
+        "src": "/images/work/hape/sections/05-age-development-04-explore-learning-benefits.webp",
+        "width": 2560,
+        "height": 1800,
+        "start": 4650,
+        "end": 6450
+      },
+      {
+        "index": "05",
+        "name": "Find the Right Play",
+        "src": "/images/work/hape/sections/05-age-development-05-find-the-right-play.webp",
+        "width": 2560,
+        "height": 1450,
+        "start": 6450,
+        "end": 7900
+      },
+      {
+        "index": "06",
+        "name": "Footer",
+        "src": "/images/work/hape/sections/05-age-development-06-footer.webp",
+        "width": 2560,
+        "height": 862,
+        "start": 7790,
+        "end": 8652
+      }
+    ]
+  },
+  {
+    "id": "toys",
+    "index": "06",
+    "name": "Toys",
+    "node": "4062:4",
+    "src": "/images/work/hape/toys-2x.png",
+    "width": 2600,
+    "height": 6728,
+    "sections": [
+      {
+        "index": "01",
+        "name": "Hero & Category Intro",
+        "src": "/images/work/hape/sections/06-toys-01-hero-and-category-intro.webp",
+        "width": 2600,
+        "height": 1000,
+        "start": 0,
+        "end": 1000
+      },
+      {
+        "index": "02",
+        "name": "Filters & Product Grid",
+        "src": "/images/work/hape/sections/06-toys-02-filters-and-product-grid.webp",
+        "width": 2600,
+        "height": 4950,
+        "start": 1000,
+        "end": 5950
+      },
+      {
+        "index": "03",
+        "name": "Load More & Service Badges",
+        "src": "/images/work/hape/sections/06-toys-03-load-more-and-service-badges.webp",
+        "width": 2600,
+        "height": 550,
+        "start": 5950,
+        "end": 6500
+      },
+      {
+        "index": "04",
+        "name": "Footer",
+        "src": "/images/work/hape/sections/06-toys-04-footer.webp",
+        "width": 2600,
+        "height": 248,
+        "start": 6480,
+        "end": 6728
+      }
+    ]
+  },
+  {
+    "id": "product-detail",
+    "index": "07",
+    "name": "Product Detail",
+    "node": "2010:2227",
+    "src": "/images/work/hape/product-detail-2x.png",
+    "width": 2560,
+    "height": 21842,
+    "sections": [
+      {
+        "index": "01",
+        "name": "Hero & Gallery",
+        "src": "/images/work/hape/sections/07-product-detail-01-hero-and-gallery.webp",
+        "width": 2560,
+        "height": 2800,
+        "start": 0,
+        "end": 2800
+      },
+      {
+        "index": "02",
+        "name": "Open-Ended Play",
+        "src": "/images/work/hape/sections/07-product-detail-02-open-ended-play.webp",
+        "width": 2560,
+        "height": 650,
+        "start": 2800,
+        "end": 3450
+      },
+      {
+        "index": "03",
+        "name": "The Play Journey",
+        "src": "/images/work/hape/sections/07-product-detail-03-the-play-journey.webp",
+        "width": 2560,
+        "height": 4000,
+        "start": 3450,
+        "end": 7450
+      },
+      {
+        "index": "04",
+        "name": "Learn",
+        "src": "/images/work/hape/sections/07-product-detail-04-learn.webp",
+        "width": 2560,
+        "height": 1200,
+        "start": 7450,
+        "end": 8650
+      },
+      {
+        "index": "05",
+        "name": "What Will They Discover?",
+        "src": "/images/work/hape/sections/07-product-detail-05-what-will-they-discover.webp",
+        "width": 2560,
+        "height": 1200,
+        "start": 8650,
+        "end": 9850
+      },
+      {
+        "index": "06",
+        "name": "Why This Toy?",
+        "src": "/images/work/hape/sections/07-product-detail-06-why-this-toy.webp",
+        "width": 2560,
+        "height": 3100,
+        "start": 9850,
+        "end": 12950
+      },
+      {
+        "index": "07",
+        "name": "Natural Materials",
+        "src": "/images/work/hape/sections/07-product-detail-07-natural-materials.webp",
+        "width": 2560,
+        "height": 1600,
+        "start": 12950,
+        "end": 14550
+      },
+      {
+        "index": "08",
+        "name": "What's Inside",
+        "src": "/images/work/hape/sections/07-product-detail-08-what-s-inside.webp",
+        "width": 2560,
+        "height": 2200,
+        "start": 14550,
+        "end": 16750
+      },
+      {
+        "index": "09",
+        "name": "FAQ & Reviews",
+        "src": "/images/work/hape/sections/07-product-detail-09-faq-and-reviews.webp",
+        "width": 2560,
+        "height": 2000,
+        "start": 16750,
+        "end": 18750
+      },
+      {
+        "index": "10",
+        "name": "Keep Playing",
+        "src": "/images/work/hape/sections/07-product-detail-10-keep-playing.webp",
+        "width": 2560,
+        "height": 1600,
+        "start": 18750,
+        "end": 20350
+      },
+      {
+        "index": "11",
+        "name": "Newsletter",
+        "src": "/images/work/hape/sections/07-product-detail-11-newsletter.webp",
+        "width": 2560,
+        "height": 700,
+        "start": 20350,
+        "end": 21050
+      },
+      {
+        "index": "12",
+        "name": "Footer",
+        "src": "/images/work/hape/sections/07-product-detail-12-footer.webp",
+        "width": 2560,
+        "height": 892,
+        "start": 20950,
+        "end": 21842
+      }
+    ]
+  },
+  {
+    "id": "about",
+    "index": "08",
+    "name": "About HAPE",
+    "node": "2010:18",
+    "src": "/images/work/hape/about-2x.png",
+    "width": 2560,
+    "height": 15204,
+    "sections": [
+      {
+        "index": "01",
+        "name": "Hero",
+        "src": "/images/work/hape/sections/08-about-01-hero.webp",
+        "width": 2560,
+        "height": 2150,
+        "start": 0,
+        "end": 2150
+      },
+      {
+        "index": "02",
+        "name": "LOVE",
+        "src": "/images/work/hape/sections/08-about-02-love.webp",
+        "width": 2560,
+        "height": 1200,
+        "start": 2150,
+        "end": 3350
+      },
+      {
+        "index": "03",
+        "name": "Minds Behind Our Designs",
+        "src": "/images/work/hape/sections/08-about-03-minds-behind-our-designs.webp",
+        "width": 2560,
+        "height": 1250,
+        "start": 3350,
+        "end": 4600
+      },
+      {
+        "index": "04",
+        "name": "The Six Skills",
+        "src": "/images/work/hape/sections/08-about-04-the-six-skills.webp",
+        "width": 2560,
+        "height": 1950,
+        "start": 4600,
+        "end": 6550
+      },
+      {
+        "index": "05",
+        "name": "Design Philosophy",
+        "src": "/images/work/hape/sections/08-about-05-design-philosophy.webp",
+        "width": 2560,
+        "height": 2950,
+        "start": 6550,
+        "end": 9500
+      },
+      {
+        "index": "06",
+        "name": "Play Becomes Learning",
+        "src": "/images/work/hape/sections/08-about-06-play-becomes-learning.webp",
+        "width": 2560,
+        "height": 2350,
+        "start": 9500,
+        "end": 11850
+      },
+      {
+        "index": "07",
+        "name": "Caring for the World",
+        "src": "/images/work/hape/sections/08-about-07-caring-for-the-world.webp",
+        "width": 2560,
+        "height": 1900,
+        "start": 11850,
+        "end": 13750
+      },
+      {
+        "index": "08",
+        "name": "Newsletter",
+        "src": "/images/work/hape/sections/08-about-08-newsletter.webp",
+        "width": 2560,
+        "height": 700,
+        "start": 13750,
+        "end": 14450
+      },
+      {
+        "index": "09",
+        "name": "Footer",
+        "src": "/images/work/hape/sections/08-about-09-footer.webp",
+        "width": 2560,
+        "height": 854,
+        "start": 14350,
+        "end": 15204
+      }
+    ]
+  }
+]

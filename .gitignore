@@ -1,0 +1,41 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.*
+
+# Next.js and build output
+.next/
+.build/
+out/
+dist/
+
+# Local caches
+.cache/
+.turbo/
+.eslintcache
+*.tsbuildinfo
+
+# Local environment and deployment metadata
+.env
+.env.*
+!.env.example
+.vercel/
+.vercel-env/
+.vercel-global/
+.static-deploy/
+
+# Logs and temporary files
+*.log
+tmp-*
+*.tmp
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Local working material not needed by the deployed website
+previews/
+planning/
+scripts/
+# Backup files
+*.export-backup

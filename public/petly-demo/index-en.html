@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f1f6f0">
+  <meta name="description" content="Petly English prototype: mobile pet health bringing walks, veterinary care, vaccines and all-day advice into one system.">
+  <title>Petly: pet health, held together.</title>
+  <link rel="icon" href="assets/petly-logo.png" type="image/png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="sr-only" href="#screen">Skip to content</a>
+  <div class="stage">
+    <div class="app-shell" id="app">
+      <div class="walk-ambient" id="walk-ambient" aria-hidden="true"></div>
+      <main class="screen" id="screen" tabindex="-1"></main>
+      <div class="walk-launch-root" id="walk-launch-root"></div>
+      <nav class="bottom-nav" id="bottom-nav" aria-label="Primary navigation"></nav>
+      <div class="toast" id="toast" role="status" aria-live="polite"></div>
+      <div id="modal-root"></div>
+      <div id="login-loader-root"></div>
+    </div>
+  </div>
+  <script type="module" src="app.js"></script>
+</body>
+</html>

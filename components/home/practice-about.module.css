@@ -1,0 +1,113 @@
+.ticker {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  margin-top: 24px;
+  border-radius: 18px;
+  background: #071019;
+  padding: 15px 18px;
+  color: #f7f1e6;
+  white-space: nowrap;
+}
+html[data-theme="night"] .ticker { background: #f7f1e6; color: #071019; }
+.tickerTrack { display: flex; width: max-content; animation: ticker-move 34s linear infinite; }
+.tickerGroup { display: flex; align-items: center; gap: 28px; padding-right: 28px; }
+.tickerGroup span { font-size: clamp(1.25rem, 2.2vw, 2rem); font-weight: 400; letter-spacing: -0.025em; }
+.tickerGroup i { width: 6px; height: 6px; border-radius: 50%; background: #ff7357; }
+@keyframes ticker-move { to { transform: translateX(-50%); } }
+
+.practice { position: relative; z-index: 1; padding: 24px 0 0; }
+.practicePanel {
+  border: 0;
+  border-radius: 38px;
+  background: #f7f1e6;
+  box-shadow: 0 8px 0 #c4cec7;
+  padding: var(--card-pad);
+  color: var(--ink);
+}
+.sectionHeader {
+  display: grid;
+  gap: 24px;
+  padding-bottom: clamp(36px, 5vw, 70px);
+}
+.sectionTitle {
+  max-width: 9ch;
+  font-size: clamp(3.3rem, 7vw, 7.4rem);
+  font-weight: 600;
+  line-height: 0.88;
+  letter-spacing: -0.065em;
+}
+.sectionIntro { max-width: 34rem; color: var(--ink-soft); font-size: clamp(1rem, 1.4vw, 1.17rem); line-height: 1.58; text-wrap: pretty; }
+.principles { display: grid; gap: 14px; margin-top: 24px; }
+.principle { border-radius: 18px; background: #e9e0d1; padding: 22px; }
+.principleIndex { color: var(--muted); font-family: var(--font-mono); font-size: 9px; }
+.principle h3 { margin-top: 34px; font-size: clamp(1.6rem, 3vw, 2.5rem); font-weight: 600; line-height: 1; letter-spacing: -0.035em; }
+.principle > p:last-child { max-width: 26rem; margin-top: 14px; color: var(--ink-soft); font-size: 14px; line-height: 1.56; }
+
+.aboutWrap { position: relative; z-index: 1; padding: 24px 0 0; }
+.about {
+  background: var(--tone-mint);
+  color: var(--tone-mint-ink);
+  padding: var(--card-pad);
+}
+.aboutTopline { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 10px 24px; }
+.aboutMain { display: grid; gap: 38px; padding-block: clamp(50px, 8vw, 110px); }
+.aboutLabel { margin-bottom: 18px; color: #0a3126; font-family: var(--font-mono); font-size: 9px; letter-spacing: 0.05em; text-transform: uppercase; }
+.aboutTitle { max-width: 10ch; font-size: clamp(3.8rem, 9vw, 9.7rem); font-weight: 600; line-height: 0.84; letter-spacing: -0.072em; }
+.aboutTitle em { font-family: var(--font-sans); font-style: normal; font-weight: 700; letter-spacing: inherit; }
+.aboutCopy { max-width: 35rem; justify-self: end; color: #0a3126; font-size: clamp(1rem, 1.35vw, 1.18rem); line-height: 1.62; }
+.aboutCopy p + p { margin-top: 18px; }
+.aboutLink { display: inline-flex; align-items: center; gap: 12px; margin-top: 30px; border-radius: 12px; background: #0a3126; padding: 11px 14px; color: #effff7; font-size: 12px; font-weight: 600; }
+.arrow { width: 13px; height: 13px; }
+.aboutBottom { display: grid; gap: 12px; }
+.education, .capabilities, .note { border-radius: 18px; background: #f7f1e6; padding: 22px; }
+.school { margin-top: 28px; font-size: clamp(1.4rem, 2.6vw, 2.3rem); font-weight: 600; line-height: 1.05; letter-spacing: -0.04em; }
+.degree { margin-top: 8px; color: #0a3126; font-size: 13px; }
+.capabilities ul { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 24px; }
+.capabilities li { border-radius: 9px; background: #0a3126; padding: 7px 10px; color: #effff7; font-size: 11px; font-weight: 500; }
+.note > p:last-child { margin-top: 22px; color: #0a3126; font-size: 12px; line-height: 1.55; }
+
+@media (min-width: 800px) {
+  .sectionHeader { grid-template-columns: 0.5fr 1.15fr 0.9fr; align-items: start; }
+  .principles { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .principle { padding: 24px; }
+  .aboutMain { grid-template-columns: minmax(0, 1.2fr) minmax(300px, 0.8fr); align-items: end; }
+  .aboutBottom { grid-template-columns: 1fr 1fr 1.2fr; }
+}
+@media (max-width: 799px) {
+  .aboutCopy { justify-self: start; }
+}
+@media (max-width: 639px) {
+  .ticker { margin-top: 12px; padding-block: 12px; }
+  .practice, .aboutWrap { padding-top: 12px; }
+  .practicePanel, .about { border-radius: 28px; padding: var(--card-pad); }
+  .sectionTitle { font-size: clamp(3rem, 14vw, 4.6rem); }
+  .principle { padding: 20px 2px; }
+  .principle h3 { margin-top: 22px; }
+  .aboutBottom { border-radius: 16px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .tickerTrack { animation: none; }
+}
+
+
+
+/* Chinese interface typography */
+
+html[data-language="zh"] .sectionTitle {
+  max-width: 8ch;
+  font-size: clamp(2.8rem, 5.4vw, 5.2rem);
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+}
+html[data-language="zh"] .aboutTitle {
+  max-width: 9ch;
+  font-size: clamp(3rem, 6.2vw, 6.4rem);
+  line-height: 1.08;
+  letter-spacing: -0.035em;
+}
+html[data-language="zh"] .principle h3 { line-height: 1.18; letter-spacing: -0.025em; }
+@media (max-width: 639px) {
+  html[data-language="zh"] .sectionTitle { font-size: clamp(2.5rem, 11.5vw, 3.7rem); }
+  html[data-language="zh"] .aboutTitle { font-size: clamp(2.6rem, 12vw, 4rem); }
+}
